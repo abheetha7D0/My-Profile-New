@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>My Profile</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/icon/logo.jpg" rel="icon">
+    <meta content="Software Engineer hire" name="description">
+    <meta content="IJSE, Software Engineer, Abheetha Dilushan, Web Designer, Abheetha" name="keywords">
+    <meta content="Abheetha Dilushan" name="author">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #home {
+
+            background: url(assets/images/cover.jpg) center;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+
+            .edu-line::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #003566ff;
+            }
+
+            .edu-line>ul>li {
+                width: 50%;
+                margin-bottom: 5px;
+                position: relative;
+            }
+
+            .edu-line>ul>li:nth-child(odd) {
+                float: left;
+                clear: right;
+                transform: translateX(-80px);
+            }
+
+            .edu-line>ul>li:nth-child(even) {
+                float: right;
+                clear: left;
+                transform: translateX(40px);
+            }
+
+            .edu-line>ul>li::after {
+                content: '';
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                background-color: #003566ff;
+                border-radius: 50%;
+                top: 0;
+            }
+
+            .edu-line>ul>li:nth-child(odd)::after {
+                right: -30px;
+            }
+
+            .edu-line>ul>li:nth-child(even)::after {
+                left: -30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-icon">
+        <img alt="" src="assets/images/load.gif">
+
+    </div>
+    <main>
+
+        <nav class="navbar" id="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Abheetha</a></div>
+                <ul class="menu">
+                    <li><a class="menu-btn" href="#home">Home</a></li>
+                    <li><a class="menu-btn" href="#about-me">About</a></li>
+                    <li><a class="menu-btn" href="#project">Projects</a></li>
+                    <li><a class="menu-btn" href="#education">Education</a></li>
+                    <li><a class="menu-btn" href="#skills">Skills</a></li>
+                    <li><a class="menu-btn" href="#services">Services</a></li>
+                    <li><a class="menu-btn" href="#gallery">Gallery</a></li>
+                    <li><a class="menu-btn" href="#contact">Contact</a></li>
+
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+
+        <section id="home">
+            <section class="home-text-container">
+                <h3>
+                    Hi.. I'm </br>ABHEETHA DILUSHAN
+                </h3>
+                <h2>Welcome To My Portfolio</h2>
+                <p>Web Designer</p>
+            </section>
+        </section>
+
+
+
+        <section id="about-me">
+            <h2 align="center">About Me</h2>
+
+            <section class="about-me-text-container">
+                <div class="profile-photo-container">
+                    <img src="assets/images/7.jpg">
+                    <a download href="assets/PDF/Abheetha-Dilushan.pdf">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+                <div class="about-me-text-area">
+                    <p>Hello Visitor</p>
+                    <p>
+                        Hello, My name is H A Dilushan. Excellent IT skills, especially with design and
+                        photo-editing
+                        software. Exceptional creativity and innovation. Excellent time management and organizational
+                        skills. Accuracy and attention to detail. An understanding of the latest trends and their role
+                        within a commercial environment. Professional approach to time, costs and deadlines.
+                    </p>
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <section id="project">
+
+            <h1>Project And Assignment</h1>
+
+            <div class="basic-grid">
+
+                <a class="card">
+                    <h1>Assignment 01</h1>
+                    <p>Transitions Assignment</p>
+                    <div class="img-holder"></div>
+                </a>
+
+                <a class="card">
+                    <h1>Assignment 02</h1>
+                    <p>Transitions Assignment</p>
+                </a>
+
+                <a class="card">
+                    <h1>Assignment 03</h1>
+                    <p>Transitions Assignment</p>
+                </a>
+
+                <a class="card">
+                    <h1>Assignment 04</h1>
+                    <p>Transitions Assignment</p>
+                </a>
+
+                <a class="card">
+                    <h1>Assignment 05</h1>
+                    <p>Transitions Assignment</p>
+
+                </a>
+
+                <a class="card">
+                    <h1>Assignment 06</h1>
+                    <p>Transitions Assignment</p>
+                </a>
+
+            </div>
+
+
+            <div class="show-more-container">
+                <button><a href="myProjects.html"> Show More</a> </button>
+            </div>
+
+
+
+        </section>
+
+        <section id="education" class="edu-container">
+            <h1>Education</h1>
+            <div class="edu-line">
+                <ul>
+                    <li>
+                        <div class="edu-text-content">
+                            <h1>University Of Bolton / UK | Bachelor of Science (hons) in Computing</h1>
+                            <p>Scheduled to be finished on 2024</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-text-content">
+                            <h1>Graduate Diploma in Software Engineering(GDSE) | Institute of Software Engineering /
+                                IJSE</h1>
+                            <p>From 1st of september 2021 to 1st of september 2023</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-text-content">
+                            <h1>K/Wadduwa Central College</h1>
+                            <p>until 2019</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-text-content">
+                            <h1>K/Ariyawansha Maha Vidyalaya</h1>
+                            <p>until 2016</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="container">
+                <div class="carousel">
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="contact-container">
+            <h1>Contact</h1>
+
+            <div class="contact-inner">
+                <div class="small-profile">
+                    <div class="profile-img"></div>
+
+                    <ul class="profile-items">
+                        <li> <i class='bx bxs-envelope' style='color:#ffd60aff'> Email </i> </li>
+                        <li> <i class='bx bxl-github' style='color:#ffd60aff'> GitHub </i> </li>
+                        <li> <i class='bx bxl-linkedin-square' style='color:#ffd60aff'> LinkIn </i> </li>
+                        <li> <i class='bx bxl-twitter' style='color:#ffd60aff'> Twitter</i> </li>
+                    </ul>
+
+
+
+                </div>
+
+                <div class="contact-item-container">
+
+                    <div class="screen">
+
+                        <div class="screen-body">
+                            <div class="screen-body-item left">
+
+                                <div class="screen-body-item">
+                                    <div class="app-form">
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="NAME">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="EMAIL">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="CONTACT NO">
+                                        </div>
+                                        <div class="app-form-group message">
+                                            <input class="app-form-control" placeholder="MESSAGE">
+                                        </div>
+                                        <div class="app-form-group buttons">
+                                            <button class="app-form-button">CANCEL</button>
+                                            <button class="app-form-button">SEND</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <span class="logo_name">Abheetha</span>
+                </div>
+
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Links</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Get Started</a></li>
+
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Banner Design</a></li>
+
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Other services</li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                    <li><a href="#">Prints</a></li>
+                    <li><a href="#">Social Media</a></li>
+
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Contact</li>
+                    <li><a href="#">+91 8879887262</a></li>
+                    <li><a href="#">+91 8879887262</a></li>
+                    <li><a href="#">contact@sitesoch.com</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2022 <a href="#">Abheetha Dilushan.</a></span>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- for icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="assets/script/script.js"></script>
+
+
+
+
+</body>
+
+</html>
